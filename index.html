@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="heading-text">Money Master💰 </h2>
+    </header>
+    <main class="">
+        <section class="grid grid-cols-2 m-5">
+            <div class="m-3 ">
+                <img class="rounded-lg"  src="Resources/Pexels Photo by Karolina Grabowska (1).png" alt="" srcset="">
+            </div>
+            <div class="m-2">
+                <h4 class="text-4xl text-center font-semibold">Income</h4>
+                <div class="text-3xl m-6">
+                    <label for="income">Income:
+                        <input id="income-filed" name="income" type="text" class="bg-pink-200 rounded-lg">
+                     </label>
+                   
+                </div>
+                <h4 class="text-4xl text-center font-semibold mr-5 mb-5 ">Expenses</h4>
+                <div class="text-3xl ml-6">
+                    <label for="food">Food:
+                        <input type="text" id="food-filed" name="food" class="bg-pink-200 rounded-lg"> 
+                    </label><br>
+                    <label for="food">Cloth:
+                        <input type="text" id="cloth-filed" name="food" class="bg-pink-200 rounded-lg mt-4"> 
+                    </label><br>
+                    <label for="food">Rent:
+                        <input id="rent-filed" type="text" name="food" class="bg-pink-200 rounded-lg mt-5"> 
+                    </label><br>
+                </div>
+                <div>
+                    <button id="Calculete-btn" class="btn my-5 text-white p-5 w-3/12 bg-blue-400 rounded-lg text-3xl font-semibold block mx-auto hover:bg-blue-800 ">Calculete</button>
+                    <div class="text-center my-5">
+                        <h3 class="text-3xl font-semibold mb-8">Total Expenses : <span id="totalExpenses-filed">00</span></h3>
+                        <h3 class="text-3xl font-semibold">Current Balance : <span id="currentBalance-filed">00</span></h3>
+                    </div>
+                </div>
+                <div>
+                    <label class="text-3xl" for="save">Save:
+                        <input type="text" class="bg-red-300 rounded-lg text-yellow-800 name="save" id="save-parsenties"> % <button class="bg-blue-400 p-3 rounded-lg text-white hover:bg-blue-800 ">Save</button>
+                    </label>
+                </div>
+                <div class="text-center my-5">
+                    <h3 class="text-3xl font-semibold mb-8">Saveing Amount : <span id="saveingAmount-filed">00</span></h3>
+                    <h3 class="text-3xl font-semibold">Remaining Balance : <span id="RemainingBalance-filed">00</span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
